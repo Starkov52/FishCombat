@@ -1,0 +1,31 @@
+.present {
+  display: none;
+    top: 365px;
+    left: 1000px;
+    position:absolute;
+    animation: present 5s ease-out;
+    z-index: 99;
+    &__img {
+
+    }
+   
+ 
+}
+@keyframes present {
+    0% {
+       top: 365px;
+       display: none;
+    }
+    50% {
+       top: -180px;
+       display: none;
+       transform: rotate(20deg)
+    }
+    100% {
+      display: block;
+      top: 365px
+    }
+
+}
+
+

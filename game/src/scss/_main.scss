@@ -1,0 +1,232 @@
+// Main
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 188px;
+}
+
+// Coin Area
+.coinArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+ &__icon-fish {
+    display: flex;
+    justify-content: center;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+ }
+    &__info {
+        opacity: 0.9;
+        margin-top: 20px;
+        width: 241px;
+        height: 89px;
+        border-radius: 20px;
+        display: flex;
+        background: linear-gradient(
+        #10a4b8 , 
+        #010a88 ,
+        
+        );
+        background-size: 200% 200%;
+        animation: gradientShift 5s ease infinite;
+        flex-direction: row;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 6
+    }
+        &__icon {
+            width: 62px;
+            height: 60px;
+            margin-right: 20px;
+            position: absolute;
+            left: 25px;
+            -webkit-user-drag: none;
+            -webkit-user-select: none
+        }
+
+        &__value {
+            font-family: "Press Start 2P", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            color: goldenrod;
+            margin-left: 90px;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+        }
+ 
+
+        &__coin {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: 
+                radial-gradient(ellipse farthest-corner at right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+                radial-gradient(ellipse farthest-corner at right bottom, #b87333 0%, #ad6b2f 8%, #a05a2c 15%, #8b4b28 30%, #7b3f00 40%, rgba(0, 0, 0, 0.2) 70%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+                radial-gradient(ellipse farthest-corner at left top, #d38f66 0%, #cb7d4f 8%, #aa551a 25%, #944813 45%, #8e460d 62.5%, #7b3f00 100%);
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            z-index: 9;
+            position: relative;
+        }
+        
+        &__circle {
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            background: 
+                radial-gradient(ellipse farthest-corner at right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                radial-gradient(ellipse farthest-corner at right bottom, #b87333 0%, #ad6b2f 8%, #a05a2c 15%, #8b4b28 30%, #7b3f00 40%, rgba(0, 0, 0, 0.4) 70%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                radial-gradient(ellipse farthest-corner at left top, #d38f66 0%, #cb7d4f 8%, #aa551a 25%, #944813 45%, #8e460d 62.5%, #7b3f00 100%);
+        
+        
+        
+
+            border-radius: 50%;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            
+            position: relative;
+        }
+        .plusOne {
+            font-family: "Press Start 2P", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            position: absolute;
+            font-size: 25px;
+            color: rgb(125, 39, 5);
+            transform: translateY(100px);
+            opacity: 1;
+            animation: faded 3s forwards;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+          z-index: 1999;
+        }
+        @keyframes faded{
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+        }
+            &__icon-fish {
+                width: 140px;
+                height: 140px;
+                align-self: center;
+                opacity: 0.6;
+                -webkit-user-drag: none;
+                user-select: none;
+            }
+        }
+            .tranzaktionInfo {
+                position: absolute;
+                width: 250px;
+                height: 420px;
+                left: 1300px;
+                top: -20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                
+                    &__list {
+                        display: none;
+                        width: 250px;
+                        height: 42px;
+                       
+                    }
+                
+                    &__item {
+                        background-color: #FFFFFF;
+                        animation: notification 4s ease-out;
+                        box-shadow:#f7d203 0px 0px 20px;
+                        display: flex;
+                        gap: 10px 15px;
+                        width: 300px;
+                        height: 40px;
+                        border-radius: 10px;
+                    }
+                
+                    &__notification {
+                    }
+                
+                    &__text {
+                        align-self: center;
+                    }
+                }
+    
+
+@keyframes gradientShift {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 100%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  @keyframes notification {
+    0% {
+        transform: translateX(270px)
+    }
+    20% {
+        transform: translateX(0px);
+        opacity: 1
+    }
+    60% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-400px)
+    }
+  }
+  .egg--active {
+    position: absolute;
+    width: 50px;
+    height: 1555px;
+    left: 1000px;
+    top: -2520px;
+    background-color: red;
+    box-shadow: yellow 0px 580px 40px;
+    animation: god 5s linear;
+    opacity: 1
+  }
+
+  @keyframes god {
+    0% {
+        top: -2320px;
+        left: 1000px;
+        opacity:1
+    }
+    50% {
+        top: -1820px;
+        left: 1000px;
+        opacity:1
+    }
+    90% {
+        top: -1720px;
+        left: 1000px;
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+  }

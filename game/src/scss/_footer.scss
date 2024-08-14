@@ -1,0 +1,97 @@
+
+
+
+
+
+
+// Footer
+.footer {
+    background-color: rgba(225, 225, 225, 0.2);
+    margin-top:100px;
+    height: 100px;
+    
+    z-index: 40;
+display: flex;
+align-items: center;
+    &__inner {
+        display: flex;
+        gap: 0 240px;
+    }
+
+    &__lvlUpBtn {
+        width: 360px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        align-items: flex-end;
+        justify-content: center;
+        display: flex;
+    
+        &-icon {
+            width: 100px;
+            
+            
+            -webkit-user-drag: none;
+            height: 100px;
+        }
+    }
+        &-icon2 {
+            width: 50px;
+            -webkit-user-drag: none;
+            height: 80px;
+        }
+    
+
+    &__shopUpBtn {
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        width: 360px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+        &-icon {
+            align-items: center;
+            justify-self: center;
+            -webkit-user-drag: none;
+            height: 100px;
+        }
+    }
+    &__shopUpBtn:hover {
+    
+        background-color: rgba(0, 0, 0, 0.6);
+        
+    }
+    &__addFishBtn:hover {
+    
+        background-color: rgba(0, 0, 0, 0.6);
+        
+    }
+    &__lvlUpBtn:hover {
+    
+        background-color: rgba(0, 0, 0, 0.6);
+        
+    }
+
+    &__addFishBtn {
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        width: 360px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        &-icon {
+            height: 100px;
+            -webkit-user-drag: none;
+        }
+
+        &-icon2 {
+            
+            -webkit-user-drag: none;
+        }
+    }
+}
+

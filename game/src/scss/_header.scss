@@ -1,0 +1,156 @@
+// Header
+.header {
+    color: white;
+z-index: 5777;
+    &__menu {
+        display: flex;
+        height: 120px;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 5777;
+    }
+
+    &__lvl {
+        width: 160px;
+        height: 160px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        position: absolute;
+        top: -20%;
+        left: -2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5777;
+        gap: 15px 10px;
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        &-img {
+          
+            -webkit-user-drag: none;
+        }
+
+        &-title {
+            font-size: 19px;
+            display: flex;
+            gap: 10px;
+            opacity: 1;
+        }
+
+        &-value {
+            // Пустой блок, добавь стили если нужно
+        }
+    }
+
+    &__progressBar {
+        z-index: 5777;
+        width: 502px;
+        height: 63px;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-left: 500px;
+        margin-bottom: 60px;
+        border-radius: 30px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    &__filling {
+        height: 63px;
+        width: 0px;
+        border-radius: 30px;
+        background: linear-gradient(to right, #e57aff, #4b0082);
+    
+        background-size: 200% 200%;
+        animation: gradientShift 5s ease infinite;
+        transition: 1s ease-in
+    }
+
+    &__icon {
+        position: absolute;
+        left: 450px;
+        -webkit-user-drag: none;
+    }
+
+    &__profit {
+        z-index: 5777;
+        width: 280px;
+        height: 82px;
+        margin-bottom: 38px;
+        margin-left: 40px;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: row;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        gap: 0 40px;
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        
+        &-icon {
+            padding-left: 15px;
+            align-self: center;
+            width: 60px;
+            height: 60px;  
+            -webkit-user-drag: none;
+        }
+    }
+}
+
+// Wrapper в Header
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+
+    &__text {
+        padding-top: 15px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        gap: 0 20px;
+        
+        &-value {
+            font-size: 30px;
+        }
+
+        &-icon {
+            align-self: end;
+            width: 20px;
+            height: 20px;
+            -webkit-user-drag: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fish Combat</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="icon" href="/img/free-icon-fish-5009850.png" type="image/png"/>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="header__lvl">
+                        <img src="/img/free-icon-fish-3050551 (1) 1.png" class="header__lvl-img" alt="Изображение уровня" />
+                        <p class="header__lvl-title">
+                            <span class="header__value">0</span>LVL
+                        </p>
+                    </div>
+                <div class="header__progressBar">
+                    <div class="header__filling"></div>
+                    <img class="header__icon" src="/img/free-icon-level-up-4614123 (1) 1.png" alt="Иконка прогресса" />
+                </div>
+                <div class="header__profit">
+                    <img src="/img/free-icon-dollar-1490853 1.png" class="header__profit-icon" alt="Иконка прибыли" />
+                    <div class="wrapper">
+                    <p class="wrapper__text" > Прибыль в час</p>
+                    <div class="wrapper__info">
+                        <span class="wrapper__value"></span>
+                        <img src="/img/free-icon-info-1445402 1.png" class="wrapper__info-icon" alt="Иконка информации о прибыли" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="upgradeWindow">
+                    <div class="upgradeWindow__inner">
+                        <img src="/img/free-icon-fish-672654 (1) 2.png" class="upgradeWindow__fishIcon" />
+                        <p class="upgradeWindow__text">Уровень<span class="upgradeWindow__value"></span></p>
+                        <div class="upgradeWindow__info">
+                            <p class="upgradeWindow__text-price">Стоимость улучшения</p>
+                            <div class="upgradeWindow__container">
+                            <p class="upgradeWindow__price"></p>
+                            <img src="/img/free-icon-dollar-1490853 1.png" class="upgradeWindow__coin" />
+                            </div>
+                        </div>
+                        <div class="upgradeWindow__btns">
+                            <img src="/img/free-icon-close-3945547 2.png" class="upgradeWindow__btns-icon1" />
+                            <img src="/img/free-icon-checked-130879 (1) 2.png" class="upgradeWindow__btns-icon2" />
+                        </div>
+                        </div>
+                    </section>
+                    <section class="fishShop">
+                        <div class="fishShop__inner">
+                            <img src="/img/free-icon-back-left-arrow-circular-button-outline-54623 (2) 1.png" class="fishShop__selecIcon1" />
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-fish-5511634.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Скумбрия</p>
+                                    <p class="fishShop__fishStory">Скумбрия - это символ скорости и ловкости в мире морской рыбалки. Поймав эту стремительную рыбу, вы ощутите прилив адреналина и докажете своё мастерство в охоте на самых быстрых обитателей океана.</p>
+                                    <p class="fishShop__fishPrice">100p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                                
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-fish-672654 (1) 2.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Золотой карась</p>
+                                    <p class="fishShop__fishStory">Этот великолепный Золотой карась - настоящий клад для любого рыбака! Ловите редкого золотого карася, чтобы украсить свой аквариум или получить уникальные бонусы в игре.</p>
+                                    <p class="fishShop__fishPrice">5500p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-fish-2508143.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName"> Тропическая рыба</p>
+                                    <p class="fishShop__fishStory">Тропическая рыба-яркая и экзотическая, она привлекает внимание своим великолепным окрасом и грациозными движениями. Уловить такую рыбу - дело чести для любого рыбака, ведь это символ удачи и умения.
+
+                                    </p>
+                                    <p class="fishShop__fishPrice">25500p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-puffer-fish-3937483.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Рыба Фугу</p>
+                                    <p class="fishShop__fishStory">Рыба фугу - настоящая жемчужина для тех, кто ищет острых ощущений. Эта экзотическая и опасная рыба станет вашим личным испытанием и принесёт немало сюрпризов своим необычным поведением.</p>
+                                    <p class="fishShop__fishPrice">55550p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-clown-fish-4973884 (2).png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Рыба Клоун</p>
+                                    <p class="fishShop__fishStory">Рыба-клоун - это весёлый и яркий обитатель коралловых рифов. Добавьте эту красочную рыбу в свою коллекцию, чтобы внести немного радости и позитивных эмоций в ваше виртуальное морское приключение.</p>
+                                    <p class="fishShop__fishPrice">78990p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-angler-4971977.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Морской черт</p>
+                                    <p class="fishShop__fishStory">Морской черт-мрачный и таинственный житель глубин, своей устрашающей внешностью он пугает даже самых опытных рыбаков. Поймать этого коварного хищника - настоящее испытание.</p>
+                                    <p class="fishShop__fishPrice">105500p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-dolphin-2028425.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Дельфин</p>
+                                    <p class="fishShop__fishStory">Дельфин - грациозный и умный обитатель океана, символизирующий свободу и дружелюбие. Его поймать не так просто, ведь дельфины известны своей сообразительностью и скоростью.</p>
+                                    <p class="fishShop__fishPrice">145550p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-shark-3065737.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Акула</p>
+                                    <p class="fishShop__fishStory">Акула - воплощение силы и мощи океана. Поймать эту грозную хищницу - задача не из лёгких, но те, кто справится с ней, получат уважение и признание среди других рыбаков.</p>
+                                    <p class="fishShop__fishPrice">195500p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-capybara-235359.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName">Капибара</p>
+                                    <p class="fishShop__fishStory">Капибара?</p>
+                                    <p class="fishShop__fishPrice">228777p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <div class="fishShop__window">
+                                <img src="/img/free-icon-whale-4971939.png" class="fishShop__img"/>
+                                <div class="fishShop__info">
+                                    <p class="fishShop__fishName"> Синий кит</p>
+                                    <p class="fishShop__fishStory">Синий кит - величественный гигант морей. Заполучив этого огромного обитателя глубин, вы откроете новые горизонты и сможете исследовать подводный мир с совершенно другой перспективы.
+
+                                    </p>
+                                    <p class="fishShop__fishPrice">300000p</p>
+                                    </div>
+                                    <div class="fishShop__selectBtns">
+                                        <img src="/img/free-icon-close-3945547 2.png" class="fishShop__cancle" />
+                                        <img src="/img/free-icon-checked-130879 (1) 2.png" class="fishShop__accept" />
+                                    </div>
+                            </div>
+                            <img src="/img/free-icon-right-arrow-circular-button-outline-54240 1.png" class="fishShop__selecIcon2" />
+                        </div>
+                    </section>
+                    <div class="egg"></div>
+                    <section class="addFish">
+                        <div class="addFish__inner">
+                            <ul class="addFish__list">
+                               
+                            </ul>
+                                <div class="addFish__selectBtn">
+                                    <img src="/img/free-icon-close-3945547 2.png" class="addFish__cancle" />
+                                </div>
+                        </div>
+                    </section>
+                    <section class="info">
+                        <div class="info__wrapper">
+                        <img src="/img/free-icon-close-3945547 2.png" class="info__close" />
+                        </div>
+                        <img src="/img/free-icon-hook-592324.png" class="info__logo"/>
+                        <h1 class="info__title">Увеличьте вашу прибыль</h1>
+                        <p class="info__text-answer">Перейдите в меню добычи и купите улучшения для вашей фермы, чтобы увеличить доход</p>
+                        <p class="info__money-offlain">Зарабатывайте деньги в оффлайне в течении трех часов</p>
+                    </section>
+                    <section class="tranzaktionInfo">
+                        <ul class="tranzaktionInfo__list">
+                            
+                        </ul>
+                    </section>
+                    <section class="present">
+
+                        <img class="present__img" src="/img/free-icon-gift-1384686 (1).png"/>
+                    </section>
+                <div class="coinArea">
+                    <div class="coinArea__info">
+                        <img src="/img/free-icon-coins-1027910.png" class="coinArea__icon" alt="Иконка информации о монетах" />
+                        <span class="coinArea__value">0</span>
+                    </div>
+                    <div class="coinArea__coin">
+                        <div class="coinArea__circle">
+                        <img src="/img/free-icon-no-fish-1970935.png" class="coinArea__icon-fish" />
+                       
+                    </div>
+                    </div>
+                </div>
+                <section class="studyWindows">
+                <div class="window">
+                    <h1 class="window__title">Добро пожаловать в игру!</h1>
+                    <p class="window__text">В этой игре ты можешь развить свою подводную ферму до невероятных доходов,покупая монеты и маленькхих рыбок.</p>
+                    <button class="window__btn"><label class="window__label">Далее</label></button>
+                </div>
+<div class="window">
+    <h1 class="window__title">Шаг 1</h1>
+    <p class="window__text">Обрати внимание на шкалу уровня! С каждым кликом по монетке, помимо внутриигровой валюты, ты получаешь EXP, которое влечет за собой повышение уровня. На что влияет уровень? Ответ прост: при повышении уровня повышается прибыль за клик. Кроме того, ты можешь рассчитывать на подарок, сумма которого будет расти линейно относительно твоего уровня.</p>
+    <button class="window__btn"><label class="window__label">Далее</label></button>
+</div>
+<div class="window">
+    <h1 class="window__title">Шаг 2</h1>
+    <p class="window__text">На вырученные деньги ты можешь отправиться в магазин, чтобы купить (fishCoin). Покупая монету, у тебя открывается замечательная возможность улучшить свой доход: купить маленьких рыбок, которые будут приносить определённую прибыль в зависимости от стоимости монеты. Но если даже этой прибыли тебе недостаточно, ты вправе улучшить монету, тем самым повысив её прибыль. P.S. Каждая монета или рыбка каждые 5 секунд приносит определённое количество монет.</p>
+    <button class="window__btn"><label class="window__label">Начать!</label></button>
+</div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                <div class="footer__lvlUpBtn">
+                    <img src="/img/fish (2) 1.png" class="footer__lvlUpBtn-icon" alt="Иконка повышения уровня" />
+                    <img src="/img/up-arrow 1.png" class="footer__lvlUpBtn-icon2" alt="Иконка повышения уровня" />
+                </div>
+                <div class="footer__shopUpBtn">
+                    <img src="/img/shopping-cart (1) 1.png" class="footer__shopUpBtn-icon" alt="Иконка магазина" />
+                    
+                </div>
+                <div class="footer__addFishBtn">
+                    <img src="/img/fish 1.png" class="footer__addFishBtn-icon" alt="Иконка добавления рыбы" />
+                    <img src="/img/add (1) 1.png" class="footer__addFishBtn-icon2" alt="Иконка добавления рыбы" />
+                </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/scripts/mainScript.js"></script>
+        <script src="/scripts/coinScript.js"></script>
+        <script src="/scripts/fishShop.js"></script>
+        <script src="/scripts/event.js"></script>
+        <script type="module" src="/scripts/sendData.js"></script>
+        <script type="module" src="/scripts/study.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.form {
+    width: 400px;
+    height: 440px;
+    background-color: aqua;
+    position: absolute;
+    top: 100px;
+    border-radius: 20px;
+    background: rgba(225, 225, 225, 0.7);
+       &__inner {
+           display: flex;
+           flex-direction: column;
+           gap: 40px;
+           align-items: center;
+       }
+   
+       &__title {
+          font-size: 25px;
+       }
+   
+       &__nickName {
+           width: 300px;
+           height: 40px;
+           border:none;
+           border-radius: 10px;
+       }
+       &__nickName::placeholder {
+           font-size: 17px
+          
+       }
+   
+       &__password {
+           width: 300px;
+           height: 40px;
+           border:none;
+           border-radius: 10px;
+       }
+       &__password::placeholder {
+           font-size: 17px
+          
+       }
+   
+       &__accept {
+       }
+   
+       &__btn {
+           width: 300px;
+           height: 40px;
+           border:none;
+           border-radius: 10px;
+           background: linear-gradient(to right, #e57aff, #4b0082);
+           
+       }
+   
+   
+       &__labelBtn {
+           font-size: 17px;
+       }
+   
+       &__noAuthorized {
+       }
+   
+       &__registration {
+       }
+   }
+   body {
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       font-family: "Montserrat", sans-serif;
+       font-optical-sizing: auto;
+       font-weight: 600;
+       font-style: normal;
+       background: linear-gradient(to right, #e57aff, #4b0082, #210268);
+       background-size: 200% 200%;
+       animation: gradientShift 20s ease infinite;
+   }
+   @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 100%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+   

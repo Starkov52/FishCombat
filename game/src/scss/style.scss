@@ -1,0 +1,859 @@
+@import "_reset";
+@import "_header";
+@import "_main";
+@import "_footer";
+@import "_activeWindows";
+@import "_event";
+@import "_study";
+@mixin font { 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    @include font;
+overflow: hidden;
+background: url("../img/pikaso_enhance__vivid_2K_Standard_r_c_.png") no-repeat center / cover;
+background-size: 100%;
+cursor: url("../img/free-icon-cursor-14105980 (1).png"), auto;
+-webkit-user-drag: none;
+
+}
+html {
+
+        box-sizing: border-box;
+    
+}
+.container {
+    max-width: 1726px;
+    max-height: 1200px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+.info,
+.fishShop,
+.addFish,
+.upgradeWindow {
+    display: none; 
+}
+
+@keyframes gradientShift {
+ 0% {
+   background-position: 0% 50%
+ }
+ 50% {
+   background-position: 100% 100%
+ }
+ 100% {
+   background-position: 0% 50%
+ }
+}
+
+
+img {
+  -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+@media(min-width: 1900px) {
+  .container {
+    max-width: 1920px;
+    max-height:1080px
+  }
+  .header__progressBar { 
+    margin-left: 700px;
+  }
+  .main {
+    margin-bottom: 155px;
+  }
+  .coinArea__info {
+    margin-top:90px;
+  }
+  .footer__inner {
+    gap: 0 420px;
+  }
+  .footer {
+    height: 180px;
+    &__lvlUpBtn {
+      height: 180px;
+      &-icon {
+        height: 150px;
+        width: 150px;
+      }
+      &-icon2 {
+        height: 90px;
+        width: 80px;
+      }
+    }
+    &__shopUpBtn {
+      height: 180px;
+      &-icon {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    
+    &__addFishBtn {
+      height: 180px;
+      &-icon {
+        height: 180px;
+      }
+      &-icon2 {
+        height: 80px;
+      }
+    }
+  }
+  .header {
+    &__lvl {
+      width: 200px;
+      height: 200px;
+    }
+    &__profit {
+      width: 350px;
+      height: 100px;
+    }
+  }
+  .coinArea {
+    &__info {
+      
+      width: 300px;
+      height: 100px;
+     
+    }
+    &__coin {
+      width: 300px;
+      height: 300px;
+    }
+    &__circle {
+      width: 270px;
+      height: 270px;
+    }
+  }
+  .upgradeWindow {
+    width: 600px;
+    height: 370px;
+    left: 658px;
+    top: 100px;
+  
+  }
+  .fishShop {
+    
+    color: white;
+    z-index: 1000000;
+ position: absolute;
+ top: 90px;
+ left: 290px;
+  }
+  .addFish {
+    
+    width: 400px;
+    height: 600px;
+   
+  
+    left: 760px;
+    top: 0px;
+  
+  }
+  .info {
+   
+    width: 450px;
+    height: 550px;
+   
+    position:absolute;
+    left: 740px;
+    top: 8px;
+    
+  }
+  .egg--active {
+    position: absolute;
+    width: 50px;
+    height: 1555px;
+    left: 2000px;
+    top: -2520px;
+    box-shadow: yellow 0px 640px 40px;
+    
+  }
+  .tranzaktionInfo {
+    position: absolute;
+    width: 250px;
+    height: 420px;
+    left: 1620px;
+    top:180px;
+}
+.present {
+display: none;
+top: 565px;
+left: 1500px;
+animation: present 5s ease-out;
+}
+.window {
+
+  width: 900px;
+  height: 450px;
+  background-color: rgb(70, 13, 124);
+  position: absolute;
+  left: 520px;
+  top: 80px;
+}
+@keyframes present {
+  0% {
+     top: 565px;
+     display: none;
+  }
+  50% {
+     top: -180px;
+     display: none;
+     transform: rotate(20deg)
+  }
+  100% {
+    left: 1500px;
+    display: block;
+    top: 565px
+  }
+
+}
+@keyframes god {
+  0% {
+      top: -2320px;
+      left: 1500px;
+      opacity:1
+  }
+  50% {
+      top: -1820px;
+      left: 1500px;
+      opacity:1
+  }
+  90% {
+      top: -1690px;
+      left: 1500px;
+      opacity:1
+  }
+  100% {
+      opacity:0
+  }
+}
+
+}
+
+  @media(max-width: 450px) {
+    .container {
+      max-width: 400px;
+      max-height: 650px;
+    }
+    body {
+      max-width: 400px;
+      max-height: 750px;
+      overflow: hidden;
+      background: url("../img/7aaaa1d431c1af92261757b8ec62cf71.png") no-repeat bottom center / cover
+    } 
+    
+    html {
+      max-width: 400px;
+      max-height: 750px;
+      overflow: hidden;
+           
+        
+    }
+    .header {
+ margin-bottom: 18px;
+
+      &__menu {
+          display: flex;
+          height: 100px;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          z-index: 5777;
+      }
+  
+      &__lvl {
+          width: 100px;
+          height: 100px;
+          opacity: 0.7;
+          position: absolute;
+          top: 20px;
+          left: 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 5999777;
+          gap: 15px 10px;
+          
+          &-img {
+            display: none;
+              -webkit-user-drag: none;
+          }
+  
+          &-title {
+              font-size: 24px;
+              display: flex;
+              gap: 10px;
+              opacity: 1;
+          }
+  
+          &-value {
+              // Пустой блок, добавь стили если нужно
+          }
+      }
+  
+      &__progressBar {
+          z-index: 5777;
+          
+          width: 230px;
+          height: 50px;
+          background-color: rgba(0, 0, 0, 0.7);
+          margin-left: -6px;
+          margin-bottom: 53px;
+          border-radius:15px;
+          display: flex;
+          position: relative;
+          overflow: hidden;
+        }
+        &__icon {
+          position: absolute;
+          left: 20px;
+          -webkit-user-drag: none;
+      }
+      &__filling {
+          height: 50px;
+          width: 0px;
+          border-radius: 15px;
+          background: linear-gradient(to right, #e57aff, #4b0082);
+      
+          background-size: 200% 200%;
+          animation: gradientShift 5s ease infinite;
+          transition: 1s ease-in
+      }
+  
+      &__icon {
+          position: absolute;
+          left: 196px;
+          -webkit-user-drag: none;
+          width: 45px;
+      }
+  
+      &__profit {
+          z-index: 5777;
+          width: 160px;
+          height: 150px;
+          margin-bottom: 48px;
+          padding-right: 10px;
+          background-color: rgba(0, 0, 0, 0.7);
+          display: flex;
+          flex-direction: row;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          gap: 0 0;
+          
+          &-icon {
+              padding-left: 15px;
+              align-self: center;
+              width: 30px;
+              height: 30px;  
+              -webkit-user-drag: none;
+          }
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+       
+    color: whitesmoke;
+        &__text {
+            font-size: 11px;
+            
+          
+        }
+    
+        &__info {
+            display: flex;
+            flex-direction: row;
+            color: gold;
+            font-size: 12px;
+            &-value {
+                font-size: 15px;
+                
+            }
+    
+            &-icon {
+             
+                align-self: center;
+                width: 20px;
+                height: 20px;
+                -webkit-user-drag: none;
+            }
+        }
+    }
+  }
+    
+    
+    .footer {
+      height: 100px;
+      margin-top: 109px;
+      background-color: rgb(255,255,255,0.2);
+      &__inner {
+        gap: 0 40px;
+    }
+  
+
+      &__lvlUpBtn {
+        height: 70px;
+        width:110px;
+        &-icon {
+          height: 70px;
+          width: 80px;
+        }
+        &-icon2 {
+          height: 50px;
+          width: 50px;
+         
+        }
+      }
+      &__shopUpBtn {
+        height: 70px;
+        width: 100px;
+        &-icon {
+          height: 70px;
+          width: 70px;
+        }
+      }
+      
+      &__addFishBtn {
+        height: 70px;
+        width: 100px;
+        &-icon {
+          height: 70px;
+          width: 70px;
+        }
+        &-icon2 {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .header {
+      &__lvl {
+        width: 10px;
+        height: 10px;
+      }
+      &__profit {
+        width: 150px;
+        height: 50px;
+      }
+    }
+    
+    .upgradeWindow {
+      width: 355px;
+      height: 370px;
+      left: 10px;
+      top: 60px;
+    
+    }
+    .upgradeWindow__fishIcon {
+      width: 120px;
+      height: 120px;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      padding-left: 10px;
+  }
+    .upgradeWindow__text {
+      margin-left: 30px;
+      font-size: 30px;
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      color: white;
+      align-self: center;
+  }
+  .upgradeWindow__info {
+    width: 250px;
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2 / 3;
+    grid-column: 3 / 2;
+    background-color:  rgba(255, 255, 255, 0.7);
+    color: black;
+    gap: 20px 0;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+
+  .upgradeWindow__value {
+      font-size: 30px;
+      padding-left: 10px;
+      grid-row: 1 / 2;
+      grid-column: 3 / 4
+  }
+    .fishShop {
+      color: white;
+      z-index: 1000000;
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      width: 355px;
+  }
+  
+  .fishShop__inner {
+      display: flex;
+      top: 80px;
+      height: 400px;
+      width: 355px;
+      padding-left: 10px;
+  }
+  
+  .fishShop__selecIcon1 {
+      width: 50px;
+      height: 50px;
+      align-self: center;
+      padding-right: 5px;
+      padding-top: 34px ;
+      position: absolute;
+      left: 140px;
+      top: 316px;
+  }
+  
+  .fishShop__window {
+      display: none;
+  }
+  
+  .fishShop__window--active {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      border-radius: 30px;
+      width: 355px;
+      height: 400px;
+      background-color: rgba(0, 0, 0, 0.85);
+  }
+  
+  .fishShop__img {
+      width: 100px;
+      grid-row: 1 / 3;
+      grid-column: 1 / 2;
+      margin-left: 10px;
+  }
+  
+  .fishShop__info {
+    margin-left: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0px;
+      grid-row: 1 / 4;
+      grid-column: 2 / 4;
+  }
+  
+  .fishShop__fishName {
+      font-size: 30px;
+  }
+  
+  .fishShop__fishStory {
+      /*  ...  */
+  }
+  
+  .fishShop__fishPrice {
+      font-size: 30px;
+  }
+  
+  .fishShop__selectBtns {
+      grid-row: 4 / 5;
+      grid-column: 1 / 5;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .fishShop__cancle {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .fishShop__accept {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .fishShop__selecIcon2 {
+    position: absolute;
+      width: 50px;
+      height: 50px;
+      align-self: center;
+      padding-left: 5px;
+      left: 210px;
+      top: 350px;
+  }
+  
+  .fishShop__accept--active {
+      display: none;
+  }
+  .addFish {
+    z-index: 223332;
+    width: 350px;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 0.85);
+    position:absolute;
+    left: 13px;
+    top: -38px;
+    border-radius: 20px;
+  &__inner {
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+&__list {
+    width: 350px;
+    height: 380px;
+    overflow: auto;
+}
+&__list::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.85);
+}
+&__list::-webkit-scrollbar {
+    width: 10px;
+}
+&__list::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+&__item {
+    margin: 20px 3px 20px 3px;
+    width: 97%;
+    height: 70px;
+    display: flex;
+    gap: 0 20px;
+    border-radius: 20px;
+    
+} 
+&__item--active {
+    display: none;
+}
+
+&__icon {
+    width: 80px;
+    height: 55px;
+}
+
+&__text {
+
+}
+&__price {
+margin-right: 10px;
+font-size: 22px;
+position: relative;
+}
+&__price::after {
+content: '';
+border-radius: 50%;
+width: 20px; 
+height: 20px; 
+background-color: goldenrod;
+position: absolute;
+left: 65px;
+}
+&__add {
+    width: 50px;
+    height: 50px;
+}
+
+&__selectBtn {
+   margin-top: 15px;
+    padding-right: 35px;
+    width: 50px;
+    height: 60px;
+}
+
+&__cancle {
+  align-self: center;
+  justify-content:center;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 90px;
+    
+}
+  }
+
+    .egg--active {
+      position: absolute;
+      width: 50px;
+      height: 1555px;
+      left: 300px;
+      top: -2420px;
+      box-shadow: yellow 0px 640px 40px;
+      
+    }  
+  
+  @keyframes god {
+    0% {
+        top: -2120px;
+        left: 300px;
+        opacity:1
+    }
+    50% {
+        top: -1920px;
+        left: 300px;
+        opacity:1
+    }
+    90% {
+        top: -1820px;
+        left: 300px;
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+  }
+  .present {
+    display: none;
+      top: 350px;
+      left: 300px;
+      animation: present 5s ease-out;
+      z-index: 99;
+      &__img {
+  
+      }
+     
+   
+  }
+  @keyframes present {
+      0% {
+         top: 350px;
+         display: none;
+      }
+      50% {
+         top: -180px;
+         display: none;
+         transform: rotate(20deg)
+      }
+      100% {
+        display: block;
+        top: 350px
+      }
+  
+  }
+  .tranzaktionInfo {
+    position: absolute;
+    width: 250px;
+    height: 420px;
+    left: 1620px;
+    top: 240px;
+    &__list {
+      display: none;
+      width: 280px;
+      height: 42px;
+    }
+  }
+  .coinArea {
+  
+    &__info {
+        opacity: 0.9;
+        margin-top: 20px;
+        width: 241px;
+        height: 69px;
+    }
+        &__icon {
+            width: 62px;
+            height: 60px;
+     
+        }
+
+        &__value {
+     
+        }
+ 
+
+    &__coin {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+       
+
+    }
+        &__circle {
+            width: 220px;
+            height: 220px;
+          
+        }
+       
+            &__icon-fish {
+                width: 130px;
+                height: 130px;
+               
+            }
+        }
+            .tranzaktionInfo {
+                width: 220px;
+                height: 420px;
+                left: 100px;
+                top: -20px;
+                
+                    &__list {
+                        display: none;
+                        width: 250px;
+                        height: 42px;
+                       
+                    }
+                
+                    &__item {
+                       
+                        gap: 10px 15px;
+                        width: 300px;
+                        height: 40px;
+                        border-radius: 10px;
+                      
+                    }
+                
+                    &__notification {
+                    }
+                
+                    &__text {
+                        align-self: center;
+                    }
+                }
+                .info {
+                  width: 350px;
+                  height: 590px;
+                  position:absolute;
+                  left: 12px;
+                  top: -110px;
+                 
+                  
+              
+                 
+              }
+              .window {
+                width: 350px;
+                height: 590px;
+                max-height: 590px;
+                overflow: auto;
+                left: 5px;
+                top: -62px;
+                &__text {
+                    
+                    width: 300px;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                &__title {
+                  justify-self: center;
+                  align-self: center
+                }
+              }
+              
+    
+}
+
